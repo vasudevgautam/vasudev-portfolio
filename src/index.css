@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+/* ================================
+   GLOBAL
+================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+/* ================================
+   DARK MODE - DEFAULT
+================================ */
+
+body {
+  background: #050505;
+  color: white;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ================================
+   LIGHT MODE
+================================ */
+
+html.light body {
+  background: #f8fafc;
+  color: #111827;
+}
+
+/* Main backgrounds */
+
+html.light .bg-grid {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+}
+
+/* ================================
+   TEXT
+================================ */
+
+html.light .text-white {
+  color: #111827;
+}
+
+html.light .text-gray-100 {
+  color: #1f2937;
+}
+
+html.light .text-gray-200 {
+  color: #374151;
+}
+
+html.light .text-gray-300 {
+  color: #4b5563;
+}
+
+html.light .text-gray-400 {
+  color: #6b7280;
+}
+
+html.light .text-gray-500 {
+  color: #6b7280;
+}
+
+/* ================================
+   GLASS CARDS
+================================ */
+
+html.light .bg-white\/\[0\.03\] {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+html.light .bg-white\/\[0\.04\] {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+html.light .bg-white\/\[0\.05\] {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+html.light .bg-white\/\[0\.06\] {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* ================================
+   BORDERS
+================================ */
+
+html.light .border-white\/10 {
+  border-color: rgba(15, 23, 42, 0.10);
+}
+
+html.light .border-white\/20 {
+  border-color: rgba(15, 23, 42, 0.15);
+}
+
+html.light .border-white\/30 {
+  border-color: rgba(15, 23, 42, 0.20);
+}
+
+/* ================================
+   BLACK BACKGROUNDS
+================================ */
+
+html.light .bg-black\/20 {
+  background: rgba(15, 23, 42, 0.04);
+}
+
+html.light .bg-black\/30 {
+  background: rgba(15, 23, 42, 0.05);
+}
+
+html.light .bg-black\/40 {
+  background: rgba(15, 23, 42, 0.06);
+}
+
+html.light .bg-black\/50 {
+  background: rgba(15, 23, 42, 0.07);
+}
+
+html.light .bg-black\/60 {
+  background: rgba(15, 23, 42, 0.08);
+}
+
+html.light .bg-black\/70 {
+  background: rgba(15, 23, 42, 0.09);
+}
+
+/* ================================
+   HOVER STATES
+================================ */
+
+html.light .hover\:bg-white\/5:hover {
+  background: rgba(15, 23, 42, 0.05);
+}
+
+html.light .hover\:bg-white\/10:hover {
+  background: rgba(15, 23, 42, 0.08);
+}
+
+/* ================================
+   SHADOWS
+================================ */
+
+html.light .shadow-black\/20 {
+  --tw-shadow-color: rgba(15, 23, 42, 0.12);
+}
+
+/* ================================
+   INPUTS
+================================ */
+
+html.light input,
+html.light textarea {
+  background: rgba(255, 255, 255, 0.8);
+  color: #111827;
+  border-color: rgba(15, 23, 42, 0.15);
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #9ca3af;
+}
+
+html.light input:focus,
+html.light textarea:focus {
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+/* ================================
+   LINKS
+================================ */
+
+html.light a {
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+/* ================================
+   SELECTION
+================================ */
+
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: inherit;
+}
+/* ================================
+   LIGHT MODE NAVBAR
+================================ */
+
+html.light header {
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+html.light header.bg-black\/70 {
+  background: rgba(248, 250, 252, 0.82);
+}
+
+html.light header .text-white {
+  color: #111827;
+}
+
+html.light header .text-gray-400 {
+  color: #6b7280;
+}
+
+html.light header .hover\:text-white:hover {
+  color: #111827;
+}
+
+html.light header .border-white\/10 {
+  border-color: rgba(15, 23, 42, 0.10);
+}
+
+html.light header .bg-white\/\[0\.03\] {
+  background: rgba(15, 23, 42, 0.03);
+}
+
+html.light header .hover\:bg-white\/5:hover {
+  background: rgba(15, 23, 42, 0.05);
+}
+
+html.light header .bg-black\/90 {
+  background: rgba(248, 250, 252, 0.95);
+}
+/* ================================
+   PROJECT IMAGE
+================================ */
+
+.project-image {
+  transition:
+    transform 0.7s ease,
+    filter 0.7s ease;
+}
+
+.group:hover .project-image {
+  transform: scale(1.05);
+}
